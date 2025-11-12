@@ -1,11 +1,43 @@
-* {
-    background-color: brown;
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root{
+    /* CORES */
+    --CorPrincipal: #f9c14c;
+    --CorSecundaria: #c05307;
+    /* CORES */
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: var(--CorPrincipal); */
+    color: var(--CorSecundaria);
+    font-family: "Cormorant Garamond", serif;
 }
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+      position: fixed; /* Fixa a barra */
+      top: 0; /* No topo */
+      left: 0;
+      width: 100%; /* Ocupa toda a largura */
+      background-color: var(--CorPrincipal);
+      color: white;
+      padding: 10px 20px;
+      z-index: 1000; /* Garante que fique acima do conteúdo */
+    }
+
+    main {
+      margin-top: 60px; /* Dá espaço para o conteúdo não ficar escondido atrás da barra */
+      padding: 20px;
+    }
+
+    img {
+        height: 40px;
+        width: 40px;
+    }
