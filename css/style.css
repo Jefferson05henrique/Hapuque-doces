@@ -448,22 +448,44 @@ main {
   }
 }
 
-/* Seção "Sobre" com layout centralizado */
-.sobre {
-  background-color: var(--FundoClaro);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 40px 20px; /* Aumentado padding para melhor espaçamento */
-  text-align: center; /* Centraliza o texto */
+/* SEÇÃO SOBRE */
+/* Seção "Sobre" com fundo claro e texto centralizado */
+.sobre-section {
+  padding: 100px 20px;
+  background: var(--FundoClaro);
+  text-align: center;
 }
 
-.sobre h1,
-.sobre h2 {
-  margin-bottom: 20px;
-  line-height: 1.3; /* Melhora legibilidade */
+/* Conteúdo da seção sobre com animação ao entrar na viewport */
+.sobre-content {
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
 }
+
+/* Estado visível do conteúdo - ativado por JavaScript */
+.sobre-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Título da seção sobre */
+.sobre-content h2 {
+  font-size: clamp(32px, 6vw, 48px);
+  margin-bottom: 30px;
+  color: var(--CorTercearia);
+}
+
+/* Parágrafos da seção sobre */
+.sobre-content p {
+  font-size: clamp(16px, 3vw, 20px);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: var(--CorSecundaria);
+}
+
 
 /* CARROSSEL DE IMAGENS */
 /* Container da seção MVV (Missão, Visão, Valores) */
