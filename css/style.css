@@ -1294,7 +1294,7 @@ textarea {
 /* Imagem responsiva */
 .retiradas-entregas .imagem img {
   width: 100%;
-  height: auto;
+  height: 400px;
   border-radius: 12px;
   /* Bordas arredondadas */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
