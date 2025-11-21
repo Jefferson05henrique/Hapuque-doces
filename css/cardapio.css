@@ -107,7 +107,7 @@ nav {
     font-size: 1.1em;
     border: 2px solid var(--CorTercearia);
     border-radius: 25px;
-    background-color: white; /* Fundo branco para digitar */
+    background-color: white; 
     color: var(--CorTercearia);
     outline: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -124,11 +124,11 @@ nav {
         justify-content: space-around;
         flex-wrap: wrap; 
         padding: 20px;
-        background-color: var(--CorPrincipal); /* Garante que a área do cardápio tenha o fundo principal */
+        background-color: var(--CorPrincipal); 
     }
 
     .doce {
-        background-color: white; /* Fundo branco para o card, para destacar */
+        background-color: white; 
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin: 10px;
@@ -146,7 +146,7 @@ nav {
     }
     
     .doce h3, .doce p {
-        background-color: white; /* Garante que o texto dentro do card tenha fundo branco */
+        background-color: white;
         font-size: 1.5em;
         margin: 10px 0;
     }
