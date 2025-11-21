@@ -328,7 +328,7 @@ main {
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(65, 45, 36, 0.4), rgba(65, 45, 36, 0.6)),
-    url("https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=1920");
+    url("https://elaeminhamenina.wordpress.com/wp-content/uploads/2012/08/candy-colorful-colors-cupcake-cupcakes-favim-com-343917.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1203,7 +1203,7 @@ textarea {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  padding: 60px 5%;
+  padding: 40px 5%;
   flex-wrap: wrap;
   /* Permite quebra em telas menores */
   max-width: 1400px;
@@ -1239,8 +1239,8 @@ textarea {
 
 /* Parágrafos de informação */
 .retiradas-entregas p {
-  margin: 8px 0;
-  line-height: 1.6;
+  margin: 5px 0;
+  line-height: 2.0;
   font-size: clamp(15px, 2.5vw, 17px);
   /* Responsivo */
   color: var(--CorSecundaria);
