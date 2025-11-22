@@ -863,6 +863,9 @@ main {
   cursor: not-allowed;
   transform: none;
 }
+.btn-cardapio a {
+  color: white;
+}
 
 
 /* ============================================
