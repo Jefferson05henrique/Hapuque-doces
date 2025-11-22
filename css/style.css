@@ -316,8 +316,8 @@ main {
    SEÇÕES - PÁGINA INICIAL
    ============================================ */
 
-/* HERO FULL-SCREEN */
-/* Seção hero que ocupa toda a altura da tela com imagem de fundo */
+/* HAPU FULL-SCREEN */
+/* Seção hapu que ocupa toda a altura da tela com imagem de fundo */
 .hapu-fullscreen {
   position: relative;
   width: 100%;
@@ -1368,6 +1368,79 @@ textarea {
   line-height: 30px;
 }
 
+/* Google Translate Widget */
+#google_translate_element {
+  display: flex !important;
+  align-items: center !important;
+  margin-left: auto !important;
+  margin-right: 20px !important;
+}
+
+.goog-te-gadget {
+  font-family: var(--FontePrincipal) !important;
+  color: var(--CorPrincipal) !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.goog-te-gadget-simple {
+  background-color: transparent !important;
+  border: 1px solid var(--CorPrincipal) !important;
+  padding: 6px 12px !important;
+  border-radius: 4px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.goog-te-gadget-simple .goog-te-combo {
+  background-color: white !important;
+  color: var(--CorPrincipal) !important;
+  border: none !important;
+  padding: 4px 8px !important;
+  cursor: pointer !important;
+  font-family: var(--FontePrincipal) !important;
+  font-size: 14px !important;
+  outline: none !important;
+}
+
+.goog-te-gadget-simple .goog-te-combo:hover {
+  background-color: #f5f5f5 !important;
+}
+
+/* Mobile responsivo */
+@media (max-width: 768px) {
+  #google_translate_element {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    order: 4 !important;
+  }
+
+  .goog-te-gadget-simple {
+    padding: 4px 8px !important;
+    border-width: 1px !important;
+  }
+
+  .goog-te-gadget-simple .goog-te-combo {
+    font-size: 12px !important;
+    padding: 2px 4px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  #google_translate_element {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+
+  .goog-te-gadget-simple {
+    padding: 3px 6px !important;
+  }
+
+  .goog-te-gadget-simple .goog-te-combo {
+    font-size: 11px !important;
+    padding: 2px 3px !important;
+  }
+}
 
 /* ============================================
    FOOTER (RODAPÉ)
@@ -1409,7 +1482,7 @@ footer {
 
 .footer-map {
   display: flex;
-  align-items: center;
+  margin: auto;
 }
 
 .footer-social {
@@ -1567,11 +1640,11 @@ footer {
 
   /* FOOTER RESPONSIVO - Mobile */
   .footer-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 2fr 2fr;
     gap: 20px;
   }
 
-  .footer-info-compact {
+  .footer-info {
     grid-template-columns: 1fr;
     gap: 15px;
   }
@@ -1841,6 +1914,20 @@ footer {
   }
 }
 
+@media (max-width: 480px) {
+    /* FOOTER RESPONSIVO - Mobile */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-info {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    
+  }
+}
+
 /* Ajustes finos para dispositivos muito pequenos (<=360px) */
 @media (max-width: 360px) {
   /* Reduz espaço do header para ganhar área útil */
@@ -1858,7 +1945,7 @@ footer {
   .contato-direita { flex: 1 1 220px; }
   .contato-esquerda h2 { font-size: 20px; margin-bottom: 8px; }
   .contato-esquerda p { margin-bottom: 8px; }
-  .contato-esquerda .info-item { margin-bottom: 6px; gap: 12px; }
+  .contato-esquerda .info-item { margin-bottom: 6px; }
 
   /* Formulário mais compacto */
   .contato-direita form { gap: 8px; }
@@ -1873,6 +1960,11 @@ footer {
 
 /* Ajustes adicionais muito específicos para dispositivos <=360px (footer) */
 @media (max-width: 360px) {
+    /* FOOTER RESPONSIVO - Mobile */
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
   /* Torna o fundo do footer um pouco menos denso em telas muito pequenas */
   footer {
     background: linear-gradient(135deg,
@@ -1920,7 +2012,7 @@ footer {
   }
 
   /* FOOTER RESPONSIVO - Tablet */
-  .footer-info-compact {
+  .footer-info {
     grid-template-columns: repeat(2, 1fr);
   }
 

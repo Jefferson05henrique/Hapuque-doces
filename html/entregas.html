@@ -16,6 +16,9 @@
           <img src="../assets/img/logo.png" class="logo-header" alt="Hapuque Doces" />
         </a>
 
+        <!-- Container do tradutor (coloque no header ou onde preferir) -->
+        <div id="google_translate_element" style="position: fixed; top: 70px; right: 20px; z-index: 100;"></div>
+
         <!-- Menu Desktop (visível em telas grandes) -->
         <ul class="menu-desktop">
           <li><a href="../index.html">INICIO</a></li>
@@ -62,9 +65,7 @@
       </div>
 
       <div class="imagem">
-        <img
-          src="../assets/img/galeria/doces_montados_na_festa.jpeg"
-          alt="doces montados na festa" />
+        <img src="../assets/img/galeria/doces_montados_na_festa.jpeg" alt="doces montados na festa" />
       </div>
     </section>
 
@@ -81,9 +82,7 @@
       </div>
 
       <div class="imagem">
-        <img
-          src="../assets/img/galeria/carro_entrega.png"
-          alt="" />
+        <img src="../assets/img/galeria/carro_entrega.png" alt="" />
       </div>
     </section>
 
@@ -160,6 +159,16 @@
     </div>
   </footer>
   <script src="../javascript/menu.js"></script>
+
+  <!-- Google Translate Widget -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'pt-BR', includedLanguages: 'en,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 
 </html>
