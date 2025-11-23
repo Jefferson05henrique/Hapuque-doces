@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Hapuque Doces</title>
+    <link rel="stylesheet" href="/css/carrinho.css">
+</head>
+
+<body>
+
+<header>
+
+    <!-- MENU DESKTOP -->
+    <nav class="nav-desktop">
+        <ul>
+            <li><a href="/index.html"><img src="/assets/img/logo.png" id="logo-header-desktop" alt="Logo Hapuque Doces"></a></li>
+            <li><a href="/html/cardapio.html">CARDÁPIO</a></li>
+            <li><a href="/html/entregas.html">ENTREGAS</a></li>
+            <li><a href="/index.html">SOBRE NÓS</a></li>
+            <li><a href="/html/contato.html">CONTATO</a></li>
+        </ul>
+    </nav>
+
+    <!-- MENU MOBILE -->
+    <div class="nav-mobile">
+        <a href="/index.html">
+            <img src="/assets/img/logo.png" id="logo-header-mobile" alt="Logo Hapuque">
+        </a>
+        <button class="abrir" aria-label="Abrir Menu" onclick="toggleMenu()">☰</button>
+    </div>
+
+    <ul id="menu-mobile" class="menu-mobile" aria-hidden="true">
+        <li><a href="/html/cardapio.html">CARDÁPIO</a></li>
+        <li><a href="/html/entregas.html">ENTREGAS</a></li>
+        <li><a href="/index.html">SOBRE NÓS</a></li>
+        <li><a href="/html/contato.html">CONTATO</a></li>
+    </ul>
+
+</header>
+
+
+<main>
+
+    <!-- BANNER -->
+    <section class="banner-carrinho">
+        <div class="overlay"></div>
+        <h1>SEU CARRINHO</h1>
+    </section>
+
+    <!-- ITENS DO CARRINHO -->
+    <div id="carrinhoContainer" class="carrinho-container">
+        <!-- JS INSERE OS ITENS AQUI -->
+    </div>
+
+    <!-- TOTAL -->
+    <div class="total-area">
+        <h2>Total: <span id="totalValor">R$ 0,00</span></h2>
+        <button id="btnFinalizar" class="btn-finalizar">FINALIZAR PEDIDO</button>
+    </div>
+
+</main>
+
+
+<footer>
+
+    <section class="final">
+        <div class="grid-pedidos">
+
+            <div class="coluna">
+                <img src="/assets/img/logo.png" alt="Logo Hapuque Doces">
+                <br>
+                <a href="https://www.instagram.com/hapuques_doces/" target="_blank">
+                    <img src="/assets/img/insta.jpeg" alt="Instagram">
+                </a>
+            </div>
+
+            <div class="coluna">
+                <address>
+                    <h2>ENDEREÇO</h2>
+                    <p>Rua Vinte e Dois de Agosto, nº 201 - Vila Bela Vista (zona norte)</p>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18..." 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </address>
+            </div>
+
+            <div class="coluna">
+                <h2>FUNCIONAMENTO</h2>
+                <p>Segunda a sexta: 18h às 23h</p>
+                <p>Sábado: 19h às 23h</p>
+                <p>Domingo: Fechado</p>
+                <img src="/assets/img/michelin.png" alt="Selo Michelin">
+            </div>
+
+            <div class="coluna">
+                <ul>
+                    <li><a href="/html/cardapio.html">CARDÁPIO</a></li>
+                    <li><a href="/html/reservas.html">RESERVAR</a></li>
+                    <li><a href="/html/trabalhe.html">TRABALHE CONOSCO</a></li>
+                    <li><a href="/html/politica.html">POLÍTICA E PRIVACIDADE</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="direitos">
+        <p>Hapuques Doces 2025 - Todos os direitos reservados</p>
+        <p>Desenvolvido por GeklaTech</p>
+    </section>
+
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/javascript/nav.js"></script>
+<script src="/javascript/carrinho.js"></script>
+<script src="/javascript/carregar.js"></script>
+
+</body>
+</html>

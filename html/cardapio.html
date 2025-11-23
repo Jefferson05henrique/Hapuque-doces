@@ -16,6 +16,8 @@
               <li><a href="/html/entregas.html" target="_blank">ENTREGAS</a></li>
               <li><a href="/index.html" target="_blank">SOBRE NÓS</a></li>
               <li><a href="/html/contato.html" target="_blank">CONTATO</a></li>
+              <li><a href="/html/carrinho.html" target="_blank"><img src="/assets/img/carrinho16px.png" alt=""></a></li>
+              
               </ul>
             </nav>
 
@@ -29,10 +31,11 @@
   </div>
 
   <ul id="menu">
-    <li><a href="/index.html">CARDÁPIO</a></li>
-    <li><a href="/html/entregas.html">ENTREGAS</a></li>
+    <li><a href="/html/cardapio.html" target="_blank">CARDÁPIO</a></li>
+    <li><a href="/html/entregas.html" target="_blank">ENTREGAS</a></li>
     <li><a href="/index.html">SOBRE NÓS</a></li>
-    <li><a href="/html/contato.html">CONTATO</a></li>
+    <li><a href="/html/contato.html" target="_blank">CONTATO</a></li>
+    <li><a href="/html/carrinho.html" target="_blank"><img src="/assets/img/carrinho16px.png" alt=""></a></li>
   </ul>
   
 </nav>
@@ -52,58 +55,52 @@
             
             <div class="cardapio">
 
-                <div class="doce">
-                  <a href="/html-cardapio/mel.html">
+                <div class="doce" onclick="abrirModal('pão de mel')">
 
                     <img src="/assets/img/doce.png" alt="Doce 1">
                     <h3>Pão de Mel</h3>
                     <p>Descrição do doce de chocolate e recheio.</p>
-                  </a>
+                  
                 </div>
 
-                <div class="doce">
-                  <a href="/html-cardapio/trufas.html">
+                <div class="doce" onclick="abrirModal('Trufas')">
 
                     <img src="/assets/img/doce2.png" alt="Doce 2">
                     <h3>Trufas</h3>
                     <p>Descrição do doce de frutas e sua textura.</p>
-                  </a>
+                  
                 </div>
 
-                <div class="doce">
-                  <a href="/html-cardapio/cupcae.html">
+                <div class="doce" onclick="abrirModal('Cupcake')">
 
                     <img src="/assets/img/doce3.png" alt="Doce 3">
                     <h3>Cupcake</h3>
                     <p>Descrição da torta de morango.</p>
-                  </a>
+                
                   </div>
                 
-                <div class="doce">
-                  <a href="/html-cardapio/pirulitos.html">
+                <div class="doce" onclick="abrirModal('Pirulitos')">
 
                     <img src="/assets/img/doce4.png" alt="Doce 4">
                     <h3>Pirulitos</h3>
                     <p>Descrição do bolo da vovó, massa fofinha.</p>
-                  </a>
+  
                 </div>
                 
-                <div class="doce">
-                  <a href="/html-cardapio/docinhos.html">
+                <div class="doce" onclick="abrirModal('Docinhos')">
 
                     <img src="/assets/img/doce4.png" alt="Doce 4">
                     <h3>Docinhos</h3>
                     <p>Descrição do bolo da vovó, massa fofinha.</p>
-                  </a>
+                
                 </div>
                 
-                <div class="doce">
-                  <a href="/html-cardapio/brownie.html">
+                <div class="doce" onclick="abrirModal('Mini Brownie')">
 
                     <img src="/assets/img/doce4.png" alt="Doce 4">
                     <h3>Mini Brownie</h3>
                     <p>Descrição do bolo da vovó, massa fofinha.</p>
-                  </a>
+                  
                 </div>
                 
             </div>
@@ -148,6 +145,7 @@
               <li><a href="/html/reservas.html">RESERVAR</a></li>
               <li><a href="/html/trabalhe.html" target="_blank">TRABALHE CONOSCO</a></li>
               <li><a href="/html/politica.html">POLITICA E PRIVACIDADE</a></li>
+              <li><a href="/html/carrinho.html">CARRINHO</a></li>
             </ul>
           </div>
           
@@ -159,6 +157,32 @@
         <p>Desenvolvido por GeklaTech</p>
       </section>
     </footer>
+
+    <!-- MODAL DE SABORES -->
+<div id="modalSabores" class="modal">
+    <div class="modal-content">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+
+        <h2 id="produtoTitulo">Produto</h2>
+
+        <div id="listaSabores" class="sabores-container">
+            <!-- Os sabores serão inseridos via JavaScript -->
+        </div>
+
+        <div class="quantidade-container">
+            <label>Quantidade:</label>
+            <button onclick="alterarQtd(-1)">-</button>
+            <span id="qtdAtual">1</span>
+            <button onclick="alterarQtd(1)">+</button>
+        </div>
+
+        <button class="btnAdd" onclick="addCarrinho()">Adicionar ao Carrinho</button>
+    </div>
+</div>
+
+
+        <script src="/javascript/carrinho.js"></script>
+
     <script src="/javascript/nav.js"></script>
 
     <script src="/javascript/busca.js"></script>

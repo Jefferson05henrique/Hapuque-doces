@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --CorPrincipal: #f5e0e5;
+    --CorSecundaria: #666766;
+    --FundoClaro: #feebed;
+    --CorTercearia: #412d24;
+
+    --widthImg: 60px;
+    --heightImg: 60px;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cormorant Garamond", serif;
+    color: var(--CorTercearia);
+}
+
+
+
+/* ==========================================================
+   NAVEGAÇÃO DESKTOP
+========================================================== */
+.nav-desktop {
+    display: flex;
+    justify-content: center;
+    background-color: var(--CorPrincipal);
+    width: 100%;
+}
+
+.nav-desktop ul {
+    display: flex;
+    gap: 30px;
+    padding: 15px;
+    align-items: center;
+}
+
+#logo-header-desktop {
+    width: 60px;
+    height: 60px;
+}
+
+
+
+/* ==========================================================
+   NAVEGAÇÃO MOBILE
+========================================================== */
+.nav-mobile {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background: white;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-mobile li {
+    padding: 12px 0;
+    font-size: 18px;
+}
+
+.menu-mobile.open {
+    display: flex;
+}
+
+
+
+/* ==========================================================
+   BANNER DO CARRINHO
+========================================================== */
+.banner-carrinho {
+    position: relative;
+    height: 200px;
+    background: url('/assets/img/banner-cardapio.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-carrinho .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.banner-carrinho h1 {
+    position: relative;
+    color: white;
+    font-size: 40px;
+    z-index: 2;
+}
+
+
+
+/* ==========================================================
+   CONTAINER DO CARRINHO
+========================================================== */
+.carrinho-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+
+
+/* ==========================================================
+   ITEM DO CARRINHO
+========================================================== */
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px #0002;
+}
+
+.img-carrinho {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.item-carrinho .info h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.item-carrinho .info p {
+    margin: 3px 0;
+    font-size: 18px;
+}
+
+.remover {
+    margin-left: auto;
+    background: #ff4a6e;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+/* ==========================================================
+   TOTAL DO CARRINHO
+========================================================== */
+.total-area {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.btn-finalizar {
+    margin-top: 20px;
+    background: #ff4081;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 14px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.btn-finalizar:hover {
+    opacity: 0.8;
+}
+
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+.final {
+    background-color: var(--CorPrincipal);
+}
+
+.grid-pedidos {
+    background-color: var(--CorPrincipal);
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px 20px;
+}
+
+.coluna {
+    width: 330px;
+    background-color: var(--CorPrincipal);
+}
+
+.coluna img {
+    width: 60px;
+}
+
+.direitos {
+    background: var(--FundoClaro);
+    padding: 15px 20px;
+    text-align: center;
+}
+
+
+
+/* ==========================================================
+   RESPONSIVIDADE — 900px
+========================================================== */
+@media (max-width: 900px) {
+    .item-carrinho {
+        gap: 15px;
+        padding: 12px;
+    }
+
+    .img-carrinho {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+/* ==========================================================
+   MOBILE — 768px
+========================================================== */
+@media (max-width: 768px) {
+
+    #logo-header-mobile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 12px 20px;
+        justify-content: space-between;
+        background: var(--CorPrincipal);
+        z-index: 999;
+    }
+
+    main {
+        margin-top: 80px;
+    }
+
+    /* Carrinho mobile */
+    .item-carrinho {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .remover {
+        margin: 0 auto;
+        width: 90%;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .img-carrinho {
+        width: 140px;
+        height: 140px;
+    }
+
+    .item-carrinho .info h3 {
+        font-size: 26px;
+    }
+
+    .btn-finalizar {
+        width: 100%;
+        padding: 18px;
+        font-size: 20px;
+    }
+
+    /* Footer mobile */
+    .grid-pedidos {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+
+
+/* ==========================================================
+   ANIMAÇÃO
+========================================================== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
