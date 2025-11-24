@@ -5,15 +5,39 @@ let saborSelecionado = null;
 // SABORES PERSONALIZADOS (você pode trocar imagens e nomes)
 const saboresPorProduto = {
   "pão de mel": [
-    { nome: "Chocolate", img: "/assets/img/sabores/chocolate.jpg" },
-    { nome: "Brigadeiro", img: "/assets/img/sabores/brigadeiro.jpg" },
-    { nome: "Beijinho", img: "/assets/img/sabores/beijinho.jpg" }
+    { nome: "Chocolate", img: "/assets/img/chocolate.jpg" },
+    { nome: "Brigadeiro", img: "/assets/img/brigadeiro.jpg" },
+    { nome: "Beijinho", img: "/assets/img/beijinho.jpg" }
   ],
 
   "Trufas": [
-    { nome: "Morango", img: "/assets/img/sabores/morango.jpg" },
-    { nome: "Uva", img: "/assets/img/sabores/uva.jpg" },
-    { nome: "Maracujá", img: "/assets/img/sabores/maracuja.jpg" }
+    { nome: "Morango", img: "/assets/img/morango.jpg" },
+    { nome: "Uva", img: "/assets/img/uva.jpg" },
+    { nome: "Maracujá", img: "/assets/img/maracuja.jpg" }
+  ],
+
+  "Cupcake": [
+    { nome: "Chocolate", img: "/assets/img/chocolate.jpg" },
+    { nome: "Brigadeiro", img: "/assets/img/brigadeiro.jpg" },
+    { nome: "Beijinho", img: "/assets/img/beijinho.jpg" }
+  ],
+
+  "Pirulitos": [
+    { nome: "Morango", img: "/assets/img/morango.jpg" },
+    { nome: "Uva", img: "/assets/img/uva.jpg" },
+    { nome: "Maracujá", img: "/assets/img/maracuja.jpg" } 
+  ],
+
+  "Docinhos": [
+    { nome: "Chocolate", img: "/assets/img/chocolate.jpg" },
+    { nome: "Brigadeiro", img: "/assets/img/brigadeiro.jpg" },
+    { nome: "Beijinho", img: "/assets/img/beijinho.jpg" }
+  ],
+
+  "Mini Brownie": [
+    { nome: "Morango", img: "/assets/img/morango.jpg" },
+    { nome: "Uva", img: "/assets/img/uva.jpg" },
+    { nome: "Maracujá", img: "/assets/img/maracuja.jpg" } 
   ]
 };
 
