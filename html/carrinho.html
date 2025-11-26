@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>POLITICA - HAPUQUE DOCES</title>
-  <link rel="stylesheet" href="../css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARDÁPIO - HAPUQUE DOCES</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-
 <body>
-  <header>
+    <header>
     <nav>
       <div class="nav-container">
         <a href="../index.html" class="logo-link">
@@ -45,9 +43,44 @@
     </nav>
   </header>
 
-  <main></main>
+    <main>
 
-  <footer>
+        <section class="banner-contato">
+            <div class="overlay"></div>
+            <h1>CARRINHO</h1>
+        </section>
+
+        <section class="carrinho-page">
+            <h1>Seu Carrinho de Compras</h1>
+            
+            <div id="lista-carrinho" class="lista-carrinho-container">
+                <p id="carrinho-vazio" style="text-align: center; margin-top: 50px; display: none;">
+                    Seu carrinho está vazio. Volte ao <a href="cardapio.html">Cardápio</a> para adicionar produtos!
+                </p>
+            </div>
+
+            <div class="resumo-carrinho">
+                <div class="total-linha">
+                    <span>Total de Itens:</span>
+                    <span id="contador-itens">0</span> 
+                </div>
+                <div class="total-linha total-geral">
+                    <strong>TOTAL:</strong>
+                    <strong id="valor-total-carrinho">R$ 0,00</strong>
+                </div>
+                
+                <button id="btn-finalizar" class="btn-cardapio" onclick="finalizarCompra()">
+                    ✅ FINALIZAR COMPRA
+                </button>
+                <button id="btn-limpar" class="btn-limpar-carrinho" onclick="limparCarrinho()">
+                    🗑️ LIMPAR CARRINHO
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
     <div class="footer-content">
       <div class="footer-info">
         <div class="footer-column">
@@ -112,7 +145,6 @@
       </p>
     </div>
   </footer>
-  <script src="../javascript/menu.js"></script>
 
   <!-- Google Translate Widget -->
   <script type="text/javascript">
@@ -122,6 +154,9 @@
   </script>
   <script type="text/javascript"
     src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script src="/javascript/carrinho.js"></script>
+  <script src="/javascript/carrinho-render.js"></script>
 
     <div id="footer-container"></div>
  <script>
@@ -144,5 +179,4 @@
 </script>
 
 </body>
-
 </html>
